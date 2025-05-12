@@ -4,6 +4,7 @@ public enum ToolType
     Wax,
     WaxStrip,
     Powder,
+    Soap,
     Shower,
     Napkin
 }

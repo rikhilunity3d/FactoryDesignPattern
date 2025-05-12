@@ -1,21 +1,21 @@
 using UnityEngine;
 
-public class Trimmer : MonoBehaviour, IBeautyTool
+public class WaxStrip : MonoBehaviour, IBeautyTool
 {
-    [SerializeField] private LegStageType requiredStage = LegStageType.Hairy;
+    [SerializeField] private LegStageType requiredStage = LegStageType.WaxApplied;
     [SerializeField] private LegCareManager legCareManager;
 
     public void UseTool(GameObject target)
     {
         if (legCareManager.IsToolValidForStage(requiredStage))
         {
-            Debug.Log("Trimmer is used on " + target.name);
-            Debug.Log("Trimmer used correctly!");
+            Debug.Log("WaxStrip is used on " + target.name);
+            Debug.Log("WaxStrip used correctly!");
             legCareManager.AdvanceStage();
         }
         else
         {
-            Debug.Log("Wrong stage for Trimmer!");
+            Debug.Log("Wrong stage for WaxStrip!");
         }
     }
 }

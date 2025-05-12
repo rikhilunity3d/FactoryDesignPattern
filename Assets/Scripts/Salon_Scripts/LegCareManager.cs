@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LegCareManager : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer legRenderer;
-    [SerializeField] private List<LegStage> allStages; // Assigned in Inspector
+    [SerializeField] private Image legImage;
+    [SerializeField] private List<LegStage> allStages;
 
     private Queue<LegStage> stageQueue;
     private LegStage currentStage;
@@ -17,14 +18,14 @@ public class LegCareManager : MonoBehaviour
     private void InitializeStages()
     {
         stageQueue = new Queue<LegStage>(allStages);
-        AdvanceStage(); // Load the first stage
+        AdvanceStage();
     }
 
     public void AdvanceStage()
     {
         if (stageQueue.Count == 0)
         {
-            Debug.Log("All stages completed!");
+            Debug.Log("All stages complete!");
             return;
         }
 
@@ -34,14 +35,10 @@ public class LegCareManager : MonoBehaviour
 
     private void ApplyStage(LegStage stage)
     {
-        legRenderer.sprite = stage.legSprite;
-        // Play stage sound later if needed
+        legImage.sprite = stage.legSprite;
     }
 
-    public LegStageType GetCurrentStageType()
-    {
-        return currentStage.stageType;
-    }
+    public LegStageType GetCurrentStageType() => currentStage.stageType;
 
     public bool IsToolValidForStage(LegStageType toolStage)
     {

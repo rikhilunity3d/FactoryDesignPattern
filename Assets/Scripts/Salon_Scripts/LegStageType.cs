@@ -2,7 +2,10 @@ public enum LegStageType
 {
     Hairy,
     Trimmed,
-    Waxed,
+    WaxApplied,
+    WaxStripped,
     Powdered,
-    Clean
+    Soaped,
+    Washed,
+    Cleaned
 }
