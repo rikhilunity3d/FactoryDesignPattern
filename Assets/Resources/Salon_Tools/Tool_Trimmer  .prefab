@@ -115,3 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 114f932bd940f44559e416e958025c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  requiredStage: 0
+  legCareManager: {fileID: 0}
+  trimmerSound: {fileID: 8300000, guid: c07f3a459a38d443daf6c1605810063f, type: 3}
+  soundEventChannel: {fileID: 11400000, guid: cf6cc0f4b99bf4c6e9c0e964560c83d2, type: 2}
