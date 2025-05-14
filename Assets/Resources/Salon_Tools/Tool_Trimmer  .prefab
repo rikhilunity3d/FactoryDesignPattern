@@ -115,7 +115,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 114f932bd940f44559e416e958025c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredStage: 0
-  legCareManager: {fileID: 0}
-  trimmerSound: {fileID: 8300000, guid: c301c9112ae174783a56b7f6f0935ed8, type: 3}
-  _onToolSoundPlay: {fileID: 11400000, guid: 4804035d87a304567ae1e46303727a3f, type: 2}
