@@ -5,6 +5,8 @@ public class Wax : MonoBehaviour, IBeautyTool
 
     [SerializeField] private LegStageType requiredStage = LegStageType.Trimmed;
     [SerializeField] private LegCareManager legCareManager;
+    [SerializeField] private AudioClip trimmerSound;
+    [SerializeField] private SoundEventChannelSO soundEventChannel;
 
     public void UseTool(GameObject target)
     {
@@ -12,6 +14,7 @@ public class Wax : MonoBehaviour, IBeautyTool
         {
             Debug.Log("Wax is used on " + target.name);
             Debug.Log("Wax used correctly!");
+            soundEventChannel.RaiseEvent(trimmerSound);
             legCareManager.AdvanceStage();
         }
         else

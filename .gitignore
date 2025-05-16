@@ -1,4 +1,4 @@
-# ========== Unity Specific ==========
+# ========== Unity Generated Files ==========
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -7,11 +7,15 @@
 [Ll]ogs/
 MemoryCaptures/
 
+# Ignore Unity .meta files (unless you're working in a team and need them)
+*.meta
+
 # Asset Store Tools
 Assets/AssetStoreTools*
 
-# ========== Visual Studio Specific ==========
+# ========== Visual Studio / JetBrains Rider ==========
 .vs/
+.idea/
 *.csproj
 *.unityproj
 *.sln
@@ -23,27 +27,28 @@ Assets/AssetStoreTools*
 *.booproj
 *.svd
 
-# ========== OS Generated ==========
+# ========== OS Generated Files ==========
 .DS_Store
 Thumbs.db
 
 # ========== Crash Reports ==========
 sysinfo.txt
 
-# ========== Others ==========
+# ========== Build Artifacts ==========
 *.apk
 *.aab
+
+# ========== Other Unwanted Files ==========
 *.db
-*.pidb.meta
 *.bak
 *.orig
 *.swp
 
-# ========== Photon ==========
+# ========== Photon Specific (optional cleanup) ==========
 Assets/Photon/PhotonUnityNetworking/Code/Doc/
 Assets/Photon/PhotonUnityNetworking/Demos/
 
-# Keep necessary folders
+# ========== Keep Important Folders ==========
 !Assets/
 !Assets/Resources/
 !Assets/Scenes/
